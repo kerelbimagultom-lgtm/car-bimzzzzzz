@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Auto – Marketplace Mobil</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; background:#f8f8f8;}
+    header {background:#0b0b0b; color:white; padding:14px 40px; display:flex; justify-content:space-between; align-items:center;}
+    nav a {color:white; margin:0 14px; text-decoration:none;}
+    .search {padding:12px; width:260px; border-radius:4px; border:none;}
+    .hero {background:#e8f0ff; display:flex; justify-content:space-between; padding:60px 10%; align-items:center;}
+    .hero h1 {font-size:46px; font-weight:700;}
+    .btn {display:inline-block; padding:12px 22px; border-radius:5px; text-decoration:none; font-size:14px; margin-top:12px;}
+    .primary {background:#0053ff; color:white;}
+    .categories, .cards, .products {padding:50px 8%;}
+    .categories h2, .products h2 {margin-bottom:25px;}
+    .cat-grid {display:flex; gap:22px; overflow-x:auto;}
+    .cat-item {text-align:center; background:white; border-radius:8px; padding:20px; min-width:120px; box-shadow:0 2px 7px rgba(0,0,0,0.08);}
+    .cards-grid {display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:25px;}
+    .card {background:white; border-radius:8px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.08);}
+    .card img {width:100%; height:200px; object-fit:cover;}
+    .card-content {padding:18px;}
+    .price {color:#0053ff; font-size:17px; font-weight:600;}
+    .products-grid {display:grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap:22px;}
+    .product {background:white; border-radius:8px; padding:14px; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.08);}
+    .product img {height:160px; width:100%; object-fit:cover; border-radius:6px;}
+    footer {padding:40px; background:#0b0b0b; color:white; text-align:center; margin-top:40px;}
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>QuickAuto</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Mobil Baru</a>
+    <a href="#">Mobil Bekas</a>
+    <a href="#">Promo</a>
+    <a href="#">Kontak</a>
+  </nav>
+  <input class="search" type="text" placeholder="Search car model...">
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Toyota Supra MK5 2024.</h1>
+    <p>Tenaga besar, tampilan agresif. Siap ngebut di jalan.</p>
+    <p class="price">Rp 1.850.000.000</p>
+    <a class="btn primary" href="#">Beli Sekarang</a>
+  </div>
+  <img src="https://i.ibb.co/cC3GBQd/supra.jpg" width="430" alt="">
+</section>
+
+<section class="categories">
+  <h2>Kategori Mobil</h2>
+  <div class="cat-grid">
+    <div class="cat-item"><img src="https://i.ibb.co/7JBj6Gb/suv.png" width="70"><p>SUV</p></div>
+    <div class="cat-item"><img src="https://i.ibb.co/hM0mwVd/sedan.png" width="70"><p>Sedan</p></div>
+    <div class="cat-item"><img src="https://i.ibb.co/VtVdRWz/hatchback.png" width="70"><p>Hatchback</p></div>
+    <div class="cat-item"><img src="https://i.ibb.co/3p83p4b/sport.png" width="70"><p>Sport</p></div>
+    <div class="cat-item"><img src="https://i.ibb.co/pZsddLN/mpv.png" width="70"><p>MPV</p></div>
+  </div>
+</section>
+
+<section class="cards">
+  <div class="cards-grid">
+    <div class="card"><img src="https://i.ibb.co/tBw3j2C/gtr.jpg">
+      <div class="card-content">
+        <h3>Nissan GT-R Premium Edition</h3>
+        <p class="price">Rp 4.200.000.000</p>
+        <a class="btn primary" href="#">Lihat Detail</a>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://i.ibb.co/1rbNySt/fortuner.jpg">
+      <div class="card-content">
+        <h3>Toyota Fortuner GR Sport</h3>
+        <p class="price">Rp 640.000.000</p>
+        <a class="btn primary" href="#">Lihat Detail</a>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://i.ibb.co/Dzwv7j7/civic.jpg">
+      <div class="card-content">
+        <h3>Honda Civic Turbo 2023</h3>
+        <p class="price">Rp 598.000.000</p>
+        <a class="btn primary" href="#">Lihat Detail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="products">
+  <h2>Mobil Trending</h2>
+  <div class="products-grid">
+    <div class="product"><img src="https://i.ibb.co/WB3mNh0/brio.jpg"><p>Honda Brio RS</p><p class="price">Rp 229.000.000</p></div>
+    <div class="product"><img src="https://i.ibb.co/5nPx49x/avanza.jpg"><p>Toyota Avanza G</p><p class="price">Rp 249.000.000</p></div>
+    <div class="product"><img src="https://i.ibb.co/MsTLhpR/yaris.jpg"><p>Toyota Yaris S</p><p class="price">Rp 298.000.000</p></div>
+    <div class="product"><img src="https://i.ibb.co/6bRb4bS/xpander.jpg"><p>Mitsubishi Xpander</p><p class="price">Rp 305.000.000</p></div>
+    <div class="product"><img src="https://i.ibb.co/0B6LXCV/hrv.jpg"><p>Honda HR-V SE</p><p class="price">Rp 423.000.000</p></div>
+  </div>
+</section>
+
+<footer>
+  © 2025 QuickAuto • Marketplace Mobil Modern
+</footer>
+
+</body>
+</html>
